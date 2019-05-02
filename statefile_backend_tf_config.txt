@@ -1,0 +1,9 @@
+terraform {
+  backend "azurerm" {
+  storage_account_name = "tfstateac<random digits>"
+  container_name       = "tfstate"
+  key                  = "<uuid here>.terraform.tfstate"
+  access_key           = "<access_key>"
+  }
+}
+
